@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City of Ghaths</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background-color: #ffffffd3;
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        .hero {
+            background-image: url("https://clubmahindra.gumlet.io/blog/media/section_images/banner1920-58d4846d1e12499.webp?w=376&dpr=2.6");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 90%;
+        }
+
+        .hero-content h1 {
+            font-size: 60px;
+            color: #ff007b;
+        }
+
+        .hero-content h2 {
+            font-size: 40px;
+            color: #2409c1;
+        }
+
+        .scrolling-text {
+            margin-top: 120px;
+            background-color: #ffe6e6;
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            animation: scroll-left 15s linear infinite;
+        }
+
+        @keyframes scroll-left {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .hero-content h1 {
+                font-size: 36px;
+            }
+
+            .hero-content h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://via.placeholder.com/100x100.png?text=Logo" alt="Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="place.html">Place</a>
+            <a href="festival.html">Festival</a>
+            <a href="food.html">Food</a>
+        </nav>
+    </header>
+
+    <div class="scrolling-text">🌊 The city of Ghaths welcomes you... 🌊</div>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h2>Kaa haal h guru</h2>
+            <h1>Welcome to the City of Ghaths</h1>
+        </div>
+    </section>
+
+</body>
+</html>
