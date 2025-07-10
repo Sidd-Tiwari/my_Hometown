@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <title>Famous Places of Varanasi</title>
     <style>
+      * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
     body {
       background-color: #f4f4f4;
-      padding: 30px;
+      padding: 0px;
       font-family: Arial, sans-serif;
     }
 
@@ -58,9 +65,63 @@
       font-size: 26px;
       margin-bottom: 15px;
     }
+    header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background-color: #ffffffd3;
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            
+
+            nav a {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+          }
   </style>
 </head>
-<body>
+<body><header>
+        <img src="https://shoptwiz.com/cdn/shop/files/SP_CFM_SAM_214_f2c3a1a4-1bdc-4c0c-8398-199e9ff84df4.png?v=1720445818" alt="Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="place.html">Place</a>
+            <a href="festival.html">Festival</a>
+            <a href="food.html">Food</a>
+        </nav>
+    </header><br><br><br><br><br><br><br>
      <h1>Famous Places of Varanasi</h1>
      <div class="place-section">
     <div class="place-container">

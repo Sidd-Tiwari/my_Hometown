@@ -1,11 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Food</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+  <title>Famous Foods of Varanasi</title>
+  <style>
+    * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    body {
+      background-color: #f4f4f4;
+      padding: 0px;
+      font-family: Arial, sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .food-section {
+      background-color: #fff;
+      border-radius: 25px;
+      padding: 20px;
+      margin-bottom: 40px;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .food-container {
+      overflow: auto;
+    }
+
+    .food-img {
+      width: 300px;
+      height: 300px;
+      border-radius: 25%;
+      border: 10px solid #f4f4f4;
+    }
+
+    .left-img {
+      float: left;
+      margin-right: 30px;
+    }
+
+    .right-img {
+      float: right;
+      margin-left: 30px;
+    }
+
+    .food-text {
+      font-size: 18px;
+      text-align: justify;
+      padding-top: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+    header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background-color: #ffffffd3;
+            backdrop-filter: blur(5px);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        header img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        nav a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            
+
+            nav a {
+                padding: 8px 15px;
+                font-size: 14px;
+            }
+          }
+  </style>
 </head>
-<body>
-    
+<body><header>
+        <img src="https://shoptwiz.com/cdn/shop/files/SP_CFM_SAM_214_f2c3a1a4-1bdc-4c0c-8398-199e9ff84df4.png?v=1720445818" alt="Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="place.html">Place</a>
+            <a href="festival.html">Festival</a>
+            <a href="food.html">Food</a>
+        </nav>
+    </header>
+    <br><br><br><br><br><br><br>
+  <h1>Famous Foods of Varanasi</h1>
+
+ 
+  <div class="food-section">
+    <div class="food-container">
+      <img src="https://i.pinimg.com/736x/53/b6/6c/53b66cba33f96fb653a920ea4a4a1c26.jpg" class="food-img left-img" alt="Kachori Sabzi">
+      <div class="food-text">
+        <h2>Kachori Sabzi</h2>
+        <p>
+          A classic Varanasi breakfast dish, Kachori Sabzi is made with crispy puris stuffed with lentils or spices, served with a spicy, tangy potato curry. It’s a local favorite often enjoyed with jalebi.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="food-section">
+    <div class="food-container">
+      <img src="https://www.awesomecuisine.com/wp-content/uploads/2020/03/banarasi-tamatar-chaat-500x500.jpg" class="food-img right-img" alt="Tamatar Chaat">
+      <div class="food-text">
+        <h2>Tamatar Chaat</h2>
+        <p>
+          A spicy and tangy delight unique to Varanasi, Tamatar Chaat is made from mashed tomatoes, boiled potatoes, desi ghee, and Indian spices. It’s served hot and topped with crunchy namkeen.
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="food-section">
+    <div class="food-container">
+      <img src="https://baatichokha.com/uploads/1743577991_2769.webp" class="food-img left-img" alt="Baati Chokha">
+      <div class="food-text">
+        <h2>Baati Chokha</h2>
+        <p>
+          A traditional rustic dish, Baati Chokha consists of baked wheat dough balls (baati) served with spicy mashed vegetables (chokha). It’s healthy, filling, and very popular in UP and Bihar.
+        </p>
+      </div>
+    </div>
+  </div>
+
+ 
+  <div class="food-section">
+    <div class="food-container">
+      <img src="https://pbs.twimg.com/media/Er1kdLPVcAALgoQ.jpg:large" class="food-img right-img" alt="Chena Dahi Vada">
+      <div class="food-text">
+        <h2>Chena Dahi Vada</h2>
+        <p>
+          Unlike the typical urad dal version, Varanasi’s dahi vadas are made of soft chena (paneer), soaked in creamy curd, topped with chutneys and spices. A cooling snack with a twist!
+        </p>
+      </div>
+    </div>
+  </div>
+
+   <div class="food-section">
+    <div class="food-container">
+      <img src="https://cf-img-a-in.tosshub.com/sites/visualstory/wp/2025/06/malaiyyoITG-1750678473373.png?size=*:900" class="food-img left-img" alt="Malaiyyo">
+      <div class="food-text">
+        <h2>Malaiyyo</h2>
+        <p>
+          A winter delicacy of Varanasi, Malaiyyo is made from dew-whipped milk froth flavored with saffron and cardamom. It literally melts in your mouth and is served in tiny clay pots.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="food-section">
+    <div class="food-container">
+      <img src="https://citywalkin.weebly.com/uploads/1/3/1/2/131221810/images-29.jpeg" class="food-img right-img" alt="Banarasi Paan">
+      <div class="food-text">
+        <h2>Banarasi Paan</h2>
+        <p>
+          No Varanasi food journey is complete without the famous Banarasi Paan. A mix of betel leaves, areca nut, sweeteners, and spices, it’s a cultural symbol of hospitality and celebration.
+        </p>
+      </div>
+    </div>
+  </div>
+
 </body>
 </html>
